@@ -47,6 +47,6 @@
   
   <!-- Volumes -->
   <Config Name="Config" Target="/config" Default="/mnt/user/appdata/jdownloader-2" Mode="rw" Description="Application configuration files" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Downloads" Target="/output" Default="/mnt/user/downloads/jdownloader-2" Mode="rw" Description="Downloaded files" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Downloads" Target="/output" Default="/mnt/user/downloads/" Mode="rw" Description="Downloaded files" Type="Path" Display="always" Required="true" Mask="false"></Config>
   
 </Container>
