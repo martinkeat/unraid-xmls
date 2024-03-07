@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>jdownloader-2</Name>
+  <Repository>jlesage/jdownloader-2</Repository>
+  <Registry>https://hub.docker.com/r/jlesage/jdownloader-2/</Registry>
+  <Network>Bridge</Network>
+  <MyIP></MyIP>
+  <Privileged>false</Privileged>
+  <Support>https://jlesage.github.io/docker-apps/</Support>
+  <Project>https://github.com/jlesage/docker-jdownloader-2</Project>
+  <Overview>This project implements a Docker container for JDownloader 2. The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.</Overview>
+  <Category>Tools:Downloaders</Category>
+  <WebUI>http://[IP]:[PORT:5800]/</WebUI>
+  <TemplateURL>https://github.com/jlesage/docker-templates</TemplateURL>
+  <Icon>https://jlesage.github.io/docker-templates/jlesage/images/jdownloader-2-icon.png</Icon>
+  <ExtraParams>--cap-add=SYS_NICE</ExtraParams>
+  <PostArgs></PostArgs>
+  <CPUset></CPUset>
+  <DateInstalled>1234567890</DateInstalled>
+  <DonateText>If you find this container useful, please consider a donation to the project.</DonateText>
+  <DonateLink>https://paypal.me/JocelynLeSage</DonateLink>
+  
+  <!-- Environmental Variables -->
+  <Environment>
+    <Variable>
+      <Name>USER_ID</Name>
+      <Value>1000</Value>
+      <Mode></Mode>
+      <Description>ID of the user the application runs as.</Description>
+      <Display></Display>
+      <Required>false</Required>
+      <Mask>false</Mask>
+    </Variable>
+    <Variable>
+      <Name>GROUP_ID</Name>
+      <Value>1000</Value>
+      <Mode></Mode>
+      <Description>ID of the group the application runs as.</Description>
+      <Display></Display>
+      <Required>false</Required>
+      <Mask>false</Mask>
+    </Variable>
+  </Environment>
+  
+  <!-- Ports -->
+  <Config Name="WebUI" Target="5800" Default="5800" Mode="tcp" Description="Web interface" Type="Port" Display="always" Required="true" Mask="false">5800</Config>
+  
+  <!-- Volumes -->
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/jdownloader-2" Mode="rw" Description="Application configuration files" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Downloads" Target="/output" Default="/mnt/user/downloads/jdownloader-2" Mode="rw" Description="Downloaded files" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  
+</Container>
