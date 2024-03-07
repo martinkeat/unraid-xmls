@@ -12,7 +12,7 @@
   <Category>Tools:Downloaders</Category>
   <WebUI>http://[IP]:[PORT:5800]/</WebUI>
   <TemplateURL>https://github.com/jlesage/docker-templates</TemplateURL>
-  <Icon>https://jlesage.github.io/docker-templates/jlesage/images/jdownloader-2-icon.png</Icon>
+  <Icon>https://github.com/martinkeat/unraid-xmls/blob/main/j2.png</Icon>
   <ExtraParams>--cap-add=SYS_NICE</ExtraParams>
   <PostArgs></PostArgs>
   <CPUset></CPUset>
