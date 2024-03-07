@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://jlesage.github.io/docker-apps/</Support>
   <Project>https://github.com/jlesage/docker-jdownloader-2</Project>
-  <Overview>This project implements a Docker container for JDownloader 2. The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.</Overview>
+  <Overview>JDownloader 2 is a free, open-source download management tool designed to streamline and simplify the process of downloading files from the internet. Renowned for its versatility and user-friendly interface, it supports a wide array of online services, including file hosting sites, video streaming platforms, and direct HTTP links. Users can benefit from features such as start, stop, and pause downloads, bandwidth limitations, auto-extract archives, and much more. Developed by a community of contributors, JDownloader 2 offers an extendable framework that can be customized through plugins and extensions, making it a powerful solution for managing downloads and saving valuable time on a daily basis. This project implements a Docker container for JDownloader 2. The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.</Overview>
   <Category>Tools:Downloaders</Category>
   <WebUI>http://[IP]:[PORT:5800]/</WebUI>
   <TemplateURL>https://github.com/jlesage/docker-templates</TemplateURL>
